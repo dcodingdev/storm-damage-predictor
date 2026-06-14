@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Data — raw files too large for GitHub
+data/raw/
+data/processed/
+
+# Models — pkl lives in backend git only, not here
+backend/models/
+
+# Frontend build output
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+
+

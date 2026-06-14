@@ -1,0 +1,34 @@
+
+
+@import "tailwindcss";
+
+@theme {
+  /* Injecting custom theme variables into Tailwind v4 */
+  --color-brand-dark: #060c09;
+  --color-brand-panel: #0a120e;
+  --color-brand-accent: #10b981;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 1. Custom Dropdown Options */
+select option {
+  background-color: var(--color-brand-dark);
+  color: white;
+}
+
+/* 2. Scrollbar Layout */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-panel);
+}
+
+/* 3. Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-accent); 
+  border-radius: 2px;
+}
